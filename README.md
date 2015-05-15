@@ -48,6 +48,10 @@ There are several commands a user needs to know:
 
 There is also a help window that you can open by clicking on the Help button on the lower left, which basically explains the same as this readme.
 
+### Last words
+
+There most likely still are some bugs. Also, unused code may still be somewhere between there. Had to completely rewrite the code once to add support for rooms. (First version wasn't meant to support that)
+
 
 ## License
 
