@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title #{title}
+    script(src='javascripts/jquery-1.11.3.min.js')
+    script(src='javascripts/bootstrap.min.js')
+    script(src='socket.io/socket.io.js')
+    script(src='javascripts/emoticons.js')
+    script(src='javascripts/client_events.js')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/emoticons/emoticons.css')
+    link(rel='stylesheet', href='/stylesheets/normalize.css')
+    link(rel='stylesheet', href='/stylesheets/my.css')
+  body
+    block content

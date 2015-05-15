@@ -1,0 +1,39 @@
+
+.modal
+{
+	overflow: hidden;
+}
+body
+{
+	left: 10px;
+	top: 10px;
+	overflow: hidden;
+}
+#maincontainer
+{
+	width: 900px;
+	height: 700px;
+}
+#messagecontainer
+{
+	width: 600px;
+	height: 400px;
+	resize: none;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+#userlist li { text-align: center; cursor: pointer }
+#channellist li { text-align: center; cursor: pointer }
+#privlist li { text-align: center; cursor: pointer }
+
+
+.btn
+{
+	width: 140px;
+}
+
+#messagecontainer a:hover
+{
+	color: red;
+}

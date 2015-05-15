@@ -1,0 +1,39 @@
+extends bsheader
+
+block content
+   div(class="container center-block" id="maincontainer")
+   
+      div(class="row")
+         div(class="col-md-2")
+            h3 Rooms
+         div(class="col-md-8")
+            h3(id="currentWindow")
+         div(class="col-md-2")
+            h3 Users
+            
+      div(class="row")
+         div(class="col-md-2")
+            ul(id="channellist" class="list-group")
+            ul(id="privlist" class="list-group")
+         div(class="col-md-10" id="messagecontainer")
+         div(class="col-md-2")
+            div(id="usercontainer")
+      
+      div(class="row")
+         div(class="col-md-2")
+            button(type="button" class="btn btn-default" data-toggle="modal" data-target="#helpModal") Help
+         div(class="col-md-8")
+            input(id="myText" type="text" class="form-control" placeholder="Your message...")
+         div(class="col-md-2")
+            button(type="button" id="sendbutton" class="btn btn-success") Send
+            
+   div(class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+      div(class="modal-dialog")
+         div(class="modal-content")  
+               
+            div(class="modal-body")
+               //- inserts help_window.jade
+               include help_window 
+            div(class="modal-footer")
+                  button(type="button" class="btn btn-primary" data-dismiss="modal") Close      
+            
