@@ -1,14 +1,10 @@
 // VARIABLES
-function privMessage (nick)
-	{
-		$('#myText').val('/msg '+nick+' ').focus();
-	}
 window.onload = function()
 {
 	var socket = io();
 	
 	
-	var myNick;// = getRandomNick();
+	var myNick;
 	
 	var myChannels = [];
 	var myPrivates = [];
@@ -399,15 +395,6 @@ window.onload = function()
 		return time;
 	}
 	
-	
-	function updateLastLines(text)
-	{
-		lastLines.push(text);
-	    currentLine = lastLines.length;
-	    if (lastLines.length > maxLines)
- 	 		lastLines.pop;
-	}
-	
 	function sendInput()
 	{
 		var input = $('#myText').val();
@@ -482,18 +469,8 @@ window.onload = function()
 			}
 		);
 	}
-	function fillNickList(room, userList)
-	{
-		userList.forEach(
-			function(entry)
-			{
-				addNickToList(entry);
-			}
-		);
-	}
 	function updatePrivWindow(oldnick, newnick)
 	{
-		if ($('#priv'))
 		$('#privlist li').each(
 			function (index)
 			{
@@ -850,7 +827,7 @@ window.onload = function()
 		"sad-smile":{title:"Sad Smile",codes:[":(",":=(",":-("]},
 		"big-smile":{title:"Big Smile",codes:[":D",":=D",":-D",":d",":=d",":-d"]},
 		cool:{title:"Cool",codes:["8)","8=)","8-)","B)","B=)","B-)","(cool)"]},
-		wink:{title:"Wink",codes:[";)",";-)",";=)",":O",":=O",":-O"]},
+		wink:{title:"Wink",codes:[";)",";-)",";=)"]},
 		crying:{title:"Crying",codes:[";(",";-(",";=("]},
 		sweating:{title:"Sweating",codes:["(sweat)","(:|"]},
 		speechless:{title:"Speechless",codes:[":|",":=|",":-|"]},
