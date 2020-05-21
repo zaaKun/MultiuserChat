@@ -1,7 +1,7 @@
 {
   "name": "MultiChat",
   "version": "1.0.0",
-  "author": "Christian Feigel",
+  "author": "zaaKun",
   "private": true,
   "scripts": {
     "start": "node ./bin/start.js"
